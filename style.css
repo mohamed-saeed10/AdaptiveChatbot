@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Fira Code','Fira Code';
+    background: #d0d4d9;
+  }
+
+  .container {
+    width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: #00000093 0px 7px 29px 0px;
+    background: #4f6666;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .chat {
+    height: 400px;
+    overflow-y: scroll;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #d7d0c9;
+    border-radius: 5px;
+    background: #292727;
+  }
+
+  .message {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .user {
+    justify-content: flex-end;
+  }
+
+  .bot {
+    justify-content: flex-start;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+
+  .user .avatar {
+    order: 2;
+    background: url("../chatbot/output.png");
+    background-size: cover;
+  
+  }
+
+  .bot .avatar {
+    order: 1;
+    background: url("Chatbot.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .user .text {
+    background: #4a4d52;
+  }
+
+  .bot .text {
+    background: #4a4d52;
+  }
+
+  .input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cbcbce;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+   
+  }
+
+  .input:focus {
+    border-color: #8296d0;
+    color: #484b4b;
+  }
+
+  .button {
+    position: absolute;
+    width: 66px;
+    border: none;
+    padding: 1.5px;
+    background: #3a5656;
+    color: rgb(68, 72, 85);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: .01rem;
+    margin-left: -4.1rem;
+    outline: none;
+    border-radius: 20px; /* Adjust the value to control the roundness */
+}
+
+button i{
+  font-size: 3rem;
+}
+  .button:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .chat::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background: #bcbdc0;
+    border-radius: 10px;
+}
+
+
+
+
+.blzvQB {
+  display: flex;
+  align-items: center;
+  float: bottom right;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #385e45; /* Black background */
+  color: #ffffff; /* Red text color */
+  border: 2px solid #ccc; /* Light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 2147483647;
+  cursor: help;
+  padding: 15px; /* Padding for content */
+  transition: all 0.3s ease; /* Smooth transition */
+  font-family: 'Courier New', Courier, monospace; /* Pixelated font family */
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px; /* Adjust font size for a more pixelated look */
+}
+
+.blzvQB {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #771908;
+  color: #ffffff;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: help;
+  padding: 15px;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  z-index: 2147483647;
+}
+
+.blzvQB .icon {
+  width: 45px; /* Set the width to a percentage value */
+  max-width: 24px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 2px;
+}
+
+
+/* Add hover effects */
+.blzvQB:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some text styles */
+.blzvQB span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.blzvQB.launcher-button:hover {
+  background: url('Chatbot.jpg') center center no-repeat , radial-gradient(circle, transparent 1%, rgb(99, 20, 0) 1%);
+  box-shadow: rgba(211, 13, 13, 0.2) 0px 2px 8px;
+  transform: scale(1.04);
+  transition: all 0.5s linear 0s;
+}
+
+.blzvQB .hover-text {
+  display: none;
+}
+
+.blzvQB:hover .default-text {
+  display: none;
+}
+
+.blzvQB:hover .hover-text {
+  display: inline;
+}
+
+
+/*.blzvQB {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  float: right;
+  border-radius: 30px 8px 30px 30px;
+  background-color: rgb(99, 0, 0);
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  z-index: 2147483647;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.1s ease-out 0s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}*/
+
+
+.text-content.hidden {
+  display: none; /* Hide the container by default */
+  position: fixed;
+  bottom: 50px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Adjust as needed */
+}
+
+
+.container {
+  position: relative;
+}
+
+.text-content.hidden {
+  position: fixed;
+  bottom: 50px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Adjust as needed */
+}
+
+
+
+
+
+
+
+
+.text-content.visible {
+  display: block;
+}
+
+
+
+
+
