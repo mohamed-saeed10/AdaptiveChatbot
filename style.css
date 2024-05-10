@@ -56,7 +56,7 @@
 
   .user .avatar {
     order: 2;
-    background: url("../chatbot/output.png");
+    background: url("../Meal-Generator-Chatbot/SPOILER_logo1.pnggh");
     background-size: cover;
   
   }
@@ -174,10 +174,10 @@ button i{
 }
 
 .blzvQB .icon {
-  width: 45px; /* Set the width to a percentage value */
-  max-width: 24px; /* Set a maximum width */
+  width: 65px; /* Set the width to a percentage value */
+  max-width: 22px; /* Set a maximum width */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 
