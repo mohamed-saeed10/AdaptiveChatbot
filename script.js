@@ -15,14 +15,11 @@ function chatbot(input) {
   
   // Here We Will Train Our Chatbot
   const keywords = [
-    { keyword: "hello", response: "Hello, How Can I Help You! <br> Kindly Type Your ingredients" },
-    { keyword: "hi", response: "HI, How Can I Help You!  <br> Kindly Type Your ingredients" },
+    { keyword: "hello", response: "Hello, How Can I Help You!" },
+    { keyword: "hi", response: "HI, How Can I Help You!" },
     { keyword: "how are you", response: "I'm doing fine, thank you for asking." },
     { keyword: "your name", response: "My name is Se3Do)-, I'm a chatbot." },
-{ keyword: "what can you do", response: "I can chat with you and give you an example of healthy food." },
-    { keyword: "eggs", response: "Vegetable Omelette: A fluffy omelette filled with sautéed vegetables like spinach, bell peppers, onions, and mushrooms. Serve with a side of whole grain toast or a mixed green salad. Egg and Avocado" },
-    { keyword: "chicken", response: "Grilled Chicken Salad: Grilled chicken breast sliced over a bed of mixed greens, cherry tomatoes, cucumbers, avocado slices, and a sprinkle of feta cheese, dressed with a light vinaigrette.Turkey and Veggie Skewers: Skewers alternating pieces of lean turkey breast, bell peppers, onions, and cherry tomatoes, grilled and served with a side of quinoa or brown rice. Lean Beef Stir-Fry: Thinly sliced lean beef stir-fried with broccoli, snap peas, carrots, and bell peppers in a light ginger and garlic sauce, served over brown rice or whole wheat noodles." },
-    { keyword: "supplement", response: "Multivitamin: A multivitamin can help fill gaps in your diet by providing essential vitamins and minerals. Look for one that covers a broad spectrum of nutrients, but be mindful not to exceed recommended daily values.Omega-3 Fatty Acids: Omega-3s, found in fish oil supplements or vegan sources like algae oil, are beneficial for heart health, brain function, and reducing inflammation.Vitamin D: Many people have low levels of vitamin D, especially if they live in areas with limited sunlight." }
+    { keyword: "what can you do", response: "I can chat with you" },
   ];
 
   // Check if the input includes any keyword and set the output accordingly
