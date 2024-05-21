@@ -1,2 +1,1 @@
-# Meal-Generator-Chatbot
-I built a responsive Meal Generator chatbot using HTML, CSS, and JavaScript. It suggests meal ideas based on user preferences. HTML structured the interface, CSS styled it, and JavaScript handled logic for processing input and displaying recommendations. Great for practicing web development skills!
+I built an adaptive chatbot using HTML, CSS, and JavaScript. It suggests ideas based on user preferences, with HTML structuring the interface, CSS providing styling, and JavaScript handling the logic for processing input and displaying recommendations. This project was great for practicing web development skills!
