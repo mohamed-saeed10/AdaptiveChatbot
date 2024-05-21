@@ -56,7 +56,7 @@
 
   .user .avatar {
     order: 2;
-    background: url("../Meal-Generator-Chatbot/SPOILER_logo1.pnggh");
+    background: url("output.png");
     background-size: cover;
   
   }
@@ -160,7 +160,7 @@ button i{
   display: flex;
   align-items: center;
   border-radius: 20px;
-  background-color: #771908;
+  background-color: #063e2c;
   color: #ffffff;
   border: 2px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
